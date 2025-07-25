@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: 🔔 Envoie un rappel
         run: |
-          echo "📅 Nouveau mois, nouveau défi !"
+          echo "📅 Nouveau Trimestre, nouveau défi !"
           echo "⚔️ N'oublie pas d'ajouter ton projet du trimestre dans 'projects-trimestriel.md'"
           echo "🚀 Let's build the future!"
 
