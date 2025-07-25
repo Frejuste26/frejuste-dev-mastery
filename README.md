@@ -24,7 +24,7 @@
 
 Chaque dossier contient :
 - ✅ Roadmap mensuelle
-- 🔨 Projets à réaliser (3/mois)
+- 🔨 Projets à réaliser (3/trimestre)
 - 📚 Liens de ressources
 - 🧠 Journal de progrès
 
