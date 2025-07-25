@@ -1,0 +1,23 @@
+name: 📣 Rappel Objectifs Mensuels
+
+on:
+  schedule:
+    - cron: "0 10 1 * *" # Tous les 1er du mois à 10h UTC
+  workflow_dispatch:
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🔔 Envoie un rappel
+        run: |
+          echo "📅 Nouveau mois, nouveau défi !"
+          echo "⚔️ N'oublie pas d'ajouter ton projet du trimestre dans 'projects-trimestriel.md'"
+          echo "🚀 Let's build the future!"
+
+      - name: 📩 Créer une issue de rappel
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "🗓️ Rappel - Projet du timestre de ${{ github.event.schedule }}"
+          content-filepath: .github/quarterly-template.md
+          labels: reminder, quarterly
